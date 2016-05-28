@@ -1,0 +1,179 @@
+/*Basic page styles*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poiret One', cursive;
+  font-size: 1em;
+  color: #2d3c49;
+}
+
+h1, h4 {
+  text-align: right;
+  padding-right: 15px;
+}
+
+h1 {
+  font-size: 4em;;
+}
+
+h4 {
+  font-size: 1.8em;
+}
+
+.header-icon {
+  height: 120px;
+  width: 120px;
+  margin: auto;
+  opacity: 0.75;
+}
+
+hr {
+  border-top: 3px double;
+  color: #2d3c49;
+  opacity: .5;
+}
+
+.feature h1 {
+  text-align: left;
+}
+
+/* Main image style */
+picture .main-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Featured image styles */
+.pic-1,
+.pic-2,
+.pic-3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 25px;
+  overflow: hidden;
+  width: 400px;
+  height: 220px;
+}
+
+p {
+  text-align: center;
+  font-weight: bold;
+  color: inherit;
+  font-size: 1.2em;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  text-align: right;
+  padding-top: 15px;
+  padding-right: 10px;
+}
+
+/*Flex-container and basic grid framework styles*/
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 500px) {
+  .header-title h1 {
+    font-size: 2.3em;
+    font-weight: bold;
+  }
+  .header-title h4 {
+    font-size: 1em;
+  }
+  .feature h1 {
+    font-size: 2.3em;
+    font-weight: bold;
+  }
+}
+
+/* Smaller displays */
+@media screen and (max-width: 600px) {
+  .col-4 {
+    width: 100%;
+  }
+}
+
+/* Medium displays (tablets) */
+@media screen and (min-width: 601px) {
+  .col-4 {
+    width: 50%;
+  }
+
+  .pic-1,
+  .pic-2,
+  .pic-3 {
+    width: 350px;
+    height: 233px;
+  }
+}
+
+/* Larger displays (laptop/desktop) */
+@media screen and (min-width: 1000px) {
+  .col-4 {
+    width: 33.33%;
+  }
+}
